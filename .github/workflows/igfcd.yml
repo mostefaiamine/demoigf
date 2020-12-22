@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - echo ${{ secrets.DOCKER_USERNAME }}
+    - echo ${{ "Hello" }}
 
