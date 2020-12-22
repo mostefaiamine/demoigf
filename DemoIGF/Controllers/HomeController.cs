@@ -14,7 +14,7 @@ namespace DemoIGF.Controllers
         /// </summary>
         private readonly IMissionService _ser;
 
-        public HomeController(IMissionService ser)
+        public HomeController(IMissionService ser
         {
             _ser = ser;
         }
