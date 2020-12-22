@@ -16,7 +16,7 @@ jobs:
     - name: init
       uses: actions/checkout@v2
     - name: Set Build Number
-      run: echo "::set-env name=BUILD_VER::v1.$GITHUB_RUN_NUMBER"
+      run: echo "::set-env name=BUILD_VER::1.$GITHUB_RUN_NUMBER"
       env: 
         ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
     - name: Login
