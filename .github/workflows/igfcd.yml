@@ -13,4 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - echo  ${{ secrets.DOCKER_USERNAME }}
+    - name: env
+    - run : set-env name=Default
+    - name : debugging
+    - run: echo  ${{ secrets.DOCKER_USERNAME }}
