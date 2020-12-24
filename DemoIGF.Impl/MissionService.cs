@@ -4,6 +4,7 @@ namespace DemoIGF
 {
     public class MissionService : IMissionService
     {
+        // Commentaire PC 1
         public decimal Calculer(string grade, int jours)
         {
             decimal taux = 0;
