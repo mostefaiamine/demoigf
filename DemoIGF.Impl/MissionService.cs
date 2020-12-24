@@ -6,7 +6,18 @@ namespace DemoIGF
     {
         public decimal Calculer(string grade, int jours)
         {
-            return 0;
+            decimal taux = 0;
+            var grd = new GradeTaux();
+            switch (grade)
+            {
+                case "ins":
+                    taux = 3000;
+                    break;
+                case "ir":
+                    taux = 5000;
+                    break;
+            }
+            return taux * jours * grd.CalculTaux(grade, jours);
         }
     }
 }
