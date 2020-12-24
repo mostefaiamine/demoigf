@@ -23,6 +23,8 @@ namespace DemoIGF.Tests
             // ir 20
             res = ser.Calculer("ir", 20);
             Assert.Equal(80000m, res);
+            res = ser.Calculer("ir", 20);
+            Assert.Equal(80000m, res);
         }
     }
 }
